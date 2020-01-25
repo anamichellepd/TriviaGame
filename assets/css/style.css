@@ -1,0 +1,52 @@
+body{
+background-image: url(../images/pink_rice.png);
+
+}
+.container{
+    margin: 50px 100px;
+    background: center;
+    background-image: url(../images/castle.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 130px;
+}
+#startBtn{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: hotpink;
+    border-color:hotpink;
+    align-items: center;
+    size: 50px;
+    }
+    .start-btn{
+        text-align: center;
+        position:center;
+    }
+.headline{
+    margin-top: 20px;
+    font-size: x-large;
+    font-family: fantasy;
+    text-align: center;
+    color: whitesmoke;
+}
+h2{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+}
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+    text-align: center;  
+}
+.btn-toolbar{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+    text-align: center;  
+    mix-blend-mode: lighten;
+}
+.btn{
+    width: 200px;
+    margin: 20px;
+}
