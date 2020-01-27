@@ -1,52 +1,165 @@
 body{
-background-image: url(../images/pink_rice.png);
-
+    font-size: 20px;
+    font-family: 'Lucida', 'Lucida Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
 }
-.container{
-    margin: 50px 100px;
-    background: center;
-    background-image: url(../images/castle.jpg);
+
+#container{
+    margin : 20px auto;
+    background-image:url(../images/castle.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 130px;
+    height: 393px;
+    width : 699px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
 }
-#startBtn{
-    color: white;
+#start{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: hotpink;
-    border-color:hotpink;
-    align-items: center;
-    size: 50px;
-    }
-    .start-btn{
-        text-align: center;
-        position:center;
-    }
-.headline{
-    margin-top: 20px;
-    font-size: x-large;
-    font-family: fantasy;
+    font-size: 1.5em;
+    font-weight: bolder;
+    word-break: break-all;
+    widows: 400px;
+    height:40px;
+    background-color: plum;
     text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left:270px;
+    top:320px;
+    color: purple;
+}
+#start:hover{
+    border: 3px solid purple;
+    color : purple;
+}
+
+#qImg{
+    width : 200px;
+    height : 200px;
+    position: absolute;
+    left : 0px;
+    top : 0px;
+}
+#qImg img{
+    width : 200px;
+    height : 200px;
+    border-top-left-radius: 5px;
+}
+
+#question{
+    width:500px;
+    height : 125px;
+    position: absolute;
+    right:0;
+    top:0;
+}
+#question p{
+    margin : 0;
+    padding : 15px;
+    font-size: 1.5em;
     color: whitesmoke;
 }
-h2{
-    font-size: large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: whitesmoke;
+
+#choices{
+    width : 480px;
+    position: absolute;
+    right : 0;
+    top : 125px;
+    padding : 10px
+}
+.choice{
+    display: inline-block;
+    width : 135px;
+    text-align: center;
+    border : 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    padding : 5px;
+}
+.choice:hover{
+    border : 2px solid grey;
+    font-weight: bold;
+}
+
+#timer{
+    position: absolute;
+    height : 100px;
+    width : 200px;
+    bottom : 0px;
+    text-align: center;
+    color: white;
+}
+#counter{
+    font-size: 3em;
+}
+#btimeGauge{
+    width : 150px;
+    height : 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin-left : 25px;
+}
+#timeGauge{
+    height : 10px;
+    border-radius: 10px;
+    background-color: mediumseagreen;
+    margin-top : -10px;
+    margin-left : 25px;
+}
+#progress{
+    width : 500px;
+    position: absolute;
+    bottom : 0px;
+    right : 0px;
+    padding:5px;
+    text-align: right;
+}
+.prog{
+    width : 25px;
+    height : 25px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left : 5px;
+    margin-right : 5px;
+}
+#scoreContainer{
+    margin : 20px auto;
+    background-color: white;
+    opacity: 0.8;
+    height: 300px;
+    width : 700px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+    display: none;
+}
+#scoreContainer img{
+    opacity: 100;
+    position: absolute;
+    display: flex;
+    left: 32%;
+}
+#scoreContainer p{
+    position: absolute;
+    display: block;
+    width : 59px;
+    height :59px;
+    top:130px;
+    left:325px;
+    font-size: 1.5em;
+    font-weight: bold;
     text-align: center;
 }
-h3{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: whitesmoke;
-    text-align: center;  
-}
-.btn-toolbar{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: whitesmoke;
-    text-align: center;  
-    mix-blend-mode: lighten;
-}
-.btn{
-    width: 200px;
-    margin: 20px;
-}
+
+
+
+
+
+
+
+
+
+
+

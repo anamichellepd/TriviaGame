@@ -11,29 +11,44 @@ const timeGauge = document.getElementById("timeGauge");
 const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
 
+
 // create our questions
 let questions = [
     {
-        question : "What does HTML stand for?",
-        imgSrc : "img/html.png",
-        choiceA : "Correct",
-        choiceB : "Wrong",
-        choiceC : "Wrong",
+        question : "Which Disney Princess had a pet tiger?",
+        imgSrc : "assets/images/rajah.png",
+        choiceA : "Jasmine",
+        choiceB : "Moana",
+        choiceC : "Aurora",
         correct : "A"
     },{
-        question : "What does CSS stand for?",
-        imgSrc : "img/css.png",
-        choiceA : "Wrong",
-        choiceB : "Correct",
-        choiceC : "Wrong",
+        question : "How many bites of the poisoned apple does Snow White take?",
+        imgSrc : "assets/images/apple.png",
+        choiceA : "Two",
+        choiceB : "One",
+        choiceC : "None",
         correct : "B"
     },{
-        question : "What does JS stand for?",
-        imgSrc : "img/js.png",
-        choiceA : "Wrong",
-        choiceB : "Wrong",
-        choiceC : "Correct",
+        question : "What song does Cinderella sing while she gets ready in the morning?",
+        imgSrc : "assets/images/cinderella.gif",
+        choiceA : "When Will My Life Begin",
+        choiceB : "Someday My Prince Will Come",
+        choiceC : "A Dream is a Wish Your Heart Makes",
         correct : "C"
+    },{
+        question : "Which Disney Princess movie takes place in the United States?",
+        imgSrc : "assets/images/flag.png",
+        choiceA : "Sleeping Beauty",
+        choiceB : "Tangled",
+        choiceC : "The Princess and the Frog",
+        correct : "C"
+    },{
+        question : "Which dwarf steals extra kisses from Snow White?",
+        imgSrc : "assets/images/dopey.png",
+        choiceA : "Bashful",
+        choiceB : "Dopey",
+        choiceC : "Happy",
+        correct : "B"
     }
 ];
 
@@ -142,11 +157,11 @@ function scoreRender(){
     const scorePerCent = Math.round(100 * score/questions.length);
     
     // choose the image based on the scorePerCent
-    let img = (scorePerCent >= 80) ? "img/5.png" :
+    let img = (scorePerCent >= 80) ? "assets/images/alice.gif" :
               (scorePerCent >= 60) ? "img/4.png" :
               (scorePerCent >= 40) ? "img/3.png" :
               (scorePerCent >= 20) ? "img/2.png" :
-              "img/1.png";
+              "assets/images/alice.gif";
     
     scoreDiv.innerHTML = "<img src="+ img +">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
