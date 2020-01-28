@@ -28,10 +28,38 @@ body{
     left:270px;
     top:320px;
     color: purple;
+    border-radius: 5px;
 }
 #start:hover{
     border: 3px solid purple;
     color : purple;
+}
+
+#reset{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+    word-break: break-all;
+    widows: 400px;
+    height:40px;
+    background-color: plum;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left:270px;
+    top:320px;
+    color: purple;
+    border-radius: 5px;
+}
+#reset:hover{
+    border: 3px solid purple;
+    color : purple;
+}
+#instructions{
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 #qImg{
@@ -65,8 +93,10 @@ body{
     width : 480px;
     position: absolute;
     right : 0;
-    top : 125px;
-    padding : 10px
+    top : 170px;
+    padding : 10px;
+    color: white;
+    
 }
 .choice{
     display: inline-block;
@@ -76,6 +106,8 @@ body{
     border-radius: 5px;
     cursor: pointer;
     padding : 5px;
+    border-color: white;
+    background-color: thistle;
 }
 .choice:hover{
     border : 2px solid grey;
@@ -126,8 +158,8 @@ body{
 }
 #scoreContainer{
     margin : 20px auto;
-    background-color: white;
-    opacity: 0.8;
+    background-color: thistle;
+    
     height: 300px;
     width : 700px;
     border-radius: 5px;
@@ -136,21 +168,25 @@ body{
     display: none;
 }
 #scoreContainer img{
-    opacity: 100;
+    transform: translate(-50%, 0%);
     position: absolute;
     display: flex;
-    left: 32%;
+    left: 50%;
+    height: 300px;
 }
 #scoreContainer p{
     position: absolute;
-    display: block;
-    width : 59px;
-    height :59px;
-    top:130px;
-    left:325px;
-    font-size: 1.5em;
+    display: flex;
+    transform: translate;
+    /* display: block; */
+    /* width: 59px; */
+    /* height: 59px; */
+    /* top: 130px; */
+    left: 24%;
+    font-size: 6.5em;
     font-weight: bold;
-    text-align: center;
+    color: white;
+    /* text-align: center;
 }
 
 
